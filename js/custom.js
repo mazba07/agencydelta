@@ -286,7 +286,7 @@ jQuery(function ($) { "use strict";
 
 	function initialize() {
 
-		var myLatLng = new google.maps.LatLng(22.333851, 91.812256);
+		var myLatLng = new google.maps.LatLng(23.875897, 90.387975);
 
 		var roadAtlasStyles = [{
 			"featureType": "landscape",
@@ -359,7 +359,7 @@ jQuery(function ($) { "use strict";
 		}];
 
 		var mapOptions = {
-			zoom: 14,
+			zoom: 15,
 			center: myLatLng,
 			disableDefaultUI: true,
 			scrollwheel: false,
@@ -381,7 +381,7 @@ jQuery(function ($) { "use strict";
 			icon: 'img/location-icon.png',
 			title: '',
 		});
-
+                
 
 		google.maps.event.addListener(marker, 'click', function () {
 			infowindow.open(map, marker);
